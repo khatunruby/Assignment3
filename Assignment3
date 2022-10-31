@@ -1,0 +1,24 @@
+#Design a simple calculator
+
+num1=input("Enter first number:")
+num2=input("Enter second number:")
+op=input("Enter operand:")
+
+if(op=='+'):
+ result=int(num1)+int(num2)
+ elif(op=='-'):
+  result=int(num1)-int(num2)
+ elif(op=='*'):
+  result=int(num1)*int(num2)
+ elif(op=='**'):
+  result=int(num1)**int(num2)
+  elif(op=='/'):
+   result=int(num1)/int(num2)
+  elif(op=='//'):
+   result=int(num1)//int(num2)
+  else:
+   result=False
+  if(result==False):
+   print("Invalid operation.Please try again")
+   else:
+    print("Operation result is:",result)
